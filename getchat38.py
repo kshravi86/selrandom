@@ -13,7 +13,10 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/Users/aakashravi/PycharmProject
 os.environ['webdriver.chrome.driver']='/usr/bin/chromedriver'
 options = webdriver.ChromeOptions()
 options.add_argument("headless")
-options.addArguments("--no-sandbox");
+options.addArguments("--no-sandbox")
+
+
+
 
 # Google Chrome
 driver = webdriver.Chrome(chrome_options=options)
