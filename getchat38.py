@@ -13,7 +13,7 @@ options = webdriver.ChromeOptions()
 options.add_argument("headless")
 
 # Google Chrome
-driver = webdriver.Chrome(chrome_options = options)
+driver = webdriver.Chrome(chrome_options = options,executable_path='')
 
 # ------------------------------
 # The actual test scenario: Test the codepad.org code execution service.
