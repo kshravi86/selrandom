@@ -9,11 +9,17 @@ import os
 
 import time
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/Users/aakashravi/PycharmProjects/callcenterautomation/speech-recognition.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/aakashravi/selrandom/speech-recognition.json"
+os.environ['webdriver.chrome.driver']='/usr/bin/chromedriver'
+options = webdriver.ChromeOptions()
+options.add_argument("headless")
+options.add_argument("--no-sandbox")
+
+
+
 
 # Google Chrome
-#driver = webdriver.Chrome('/Users/aakashravi/PycharmProjects/callcenterautomation/chromedriver3')
-driver=webdriver.PhantomJS()
+driver = webdriver.Chrome(chrome_options=options)
 # ------------------------------
 # The actual test scenario: Test the codepad.org code execution service.
 
