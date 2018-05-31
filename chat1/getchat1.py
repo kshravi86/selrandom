@@ -81,7 +81,7 @@ with open('hrefs1.csv', encoding="utf-8") as csvfile:
                  from google.cloud import storage
 
                  client = storage.Client()
-                 bucket = client.get_bucket('callcenterchatapril')
+                 bucket = client.get_bucket('callcenterneday')
 
                  blob = bucket.blob(chat_id+"/"+chat_id + ".png")
                  blob.upload_from_filename(chat_id + ".png")
@@ -94,7 +94,7 @@ with open('hrefs1.csv', encoding="utf-8") as csvfile:
            from google.cloud import storage
 
            client = storage.Client()
-           bucket = client.get_bucket('callcenterchatapril')
+           bucket = client.get_bucket('callcenterneday')
 
            blob = bucket.blob(chat_id+"/"+chat_id + '.csv')
            blob.upload_from_filename(chat_id + '.csv')
