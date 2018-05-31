@@ -18,6 +18,8 @@ options.add_argument("--no-sandbox")
 
 
 
+
+
 # Google Chrome
 driver = webdriver.Chrome(chrome_options=options)
 
