@@ -9,11 +9,12 @@ import os
 import urllib
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/Users/aakashravi/PycharmProjects/callcenterautomation/speech-recognition.json"
-
+options = webdriver.ChromeOptions()
+options.add_argument("headless")
 
 # Google Chrome
-#driver = webdriver.Chrome('/Users/aakashravi/PycharmProjects/callcenterautomation/chromedriver')
-driver=webdriver.PhantomJS()
+driver = webdriver.Chrome(chrome_options = options)
+
 # ------------------------------
 # The actual test scenario: Test the codepad.org code execution service.
 
