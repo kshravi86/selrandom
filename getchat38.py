@@ -38,7 +38,7 @@ driver.find_element_by_id('password').send_keys('Roberthyden007')
 driver.find_element_by_id('submit').click()
 time.sleep(1)
 
-driver.find_element_by_xpath('//*[@id="mini_popup_wrapper"]/input[2]').click()
+#driver.find_element_by_xpath('//*[@id="mini_popup_wrapper"]/input[2]').click()
 
 import csv
 
