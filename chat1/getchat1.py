@@ -73,6 +73,7 @@ with open('hrefs1.csv', encoding="utf-8") as csvfile:
 
            fd.close()
            import urllib.request
+           
 
            # get the image source
            gg=driver.find_elements(By.CLASS_NAME,'gg-image')
