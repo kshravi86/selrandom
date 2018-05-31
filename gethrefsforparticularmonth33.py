@@ -53,7 +53,7 @@ driver.find_element_by_xpath('//*[@id="from"]').send_keys("sending")
 time.sleep(1)
 driver.find_element_by_xpath('//*[@id="from"]').clear()
 time.sleep(1)
-driver.find_element_by_xpath('//*[@id="from"]').send_keys("2018-04-19")
+driver.find_element_by_xpath('//*[@id="from"]').send_keys("2018-04-08")
 time.sleep(1)
 driver.find_element_by_xpath('//*[@id="from"]').send_keys(Keys.RETURN)
 
@@ -62,7 +62,7 @@ time.sleep(1)
 driver.find_element_by_xpath('//*[@id="to"]').clear()
 time.sleep(1)
 
-driver.find_element_by_xpath('//*[@id="to"]').send_keys("2018-04-19")
+driver.find_element_by_xpath('//*[@id="to"]').send_keys("2018-04-08")
 
 driver.find_element_by_xpath('//*[@id="to"]').send_keys(Keys.RETURN)
 
@@ -82,7 +82,7 @@ def callperday(driver):
 
     count=0
 
-    for i in range(200,300):
+    for i in range(700,800):
 
      print(count)
      print(i)

@@ -82,7 +82,7 @@ def callperday(driver):
 
     count=0
 
-    for i in range(1000,1100):
+    for i in range(500,600):
 
      print(count)
      print(i)
