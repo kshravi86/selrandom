@@ -9,7 +9,7 @@ import time
 import os
 import urllib
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/Users/aakashravi/PycharmProjects/callcenterautomation/speech-recognition.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/aakashravi/selrandom/speech-recognition.json"
 os.environ['webdriver.chrome.driver']='/usr/bin/chromedriver'
 options = webdriver.ChromeOptions()
 options.add_argument("headless")
