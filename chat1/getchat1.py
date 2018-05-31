@@ -46,10 +46,12 @@ import csv
 
 with open('hrefs1.csv', encoding="utf-8") as csvfile:
     readCSV = csv.reader(csvfile, delimiter=',')
-
+    count=0
     for row in readCSV:
       try:
            driver.get(row[0])
+           print(count)
+           count=count+1
            print("url"+row[0])
            time.sleep(1)
            chat_id = driver.find_element_by_class_name('form-element').text

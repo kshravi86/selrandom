@@ -42,7 +42,7 @@ time.sleep(1)
 
 import csv
 
-with open('hrefs2.csv', encoding="utf-8") as csvfile:
+with open('hrefs1.csv', encoding="utf-8") as csvfile:
     readCSV = csv.reader(csvfile, delimiter=',')
 
     for row in readCSV:
