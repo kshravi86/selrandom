@@ -20,7 +20,7 @@ driver=webdriver.PhantomJS()
 # Go to codepad.org
 driver.get('http://chat.gubagoo.com/')
 
-time.sleep(3)
+time.sleep(6)
 
 driver.find_element_by_id('account_id').send_keys('100268')
 
