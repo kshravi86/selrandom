@@ -18,8 +18,6 @@ options.add_argument("--no-sandbox")
 
 
 
-
-
 # Google Chrome
 driver = webdriver.Chrome(chrome_options=options)
 
@@ -46,12 +44,10 @@ import csv
 
 with open('hrefs1.csv', encoding="utf-8") as csvfile:
     readCSV = csv.reader(csvfile, delimiter=',')
-    count=0
+
     for row in readCSV:
       try:
            driver.get(row[0])
-           print(count)
-           count=count+1
            print("url"+row[0])
            time.sleep(1)
            chat_id = driver.find_element_by_class_name('form-element').text
@@ -74,7 +70,6 @@ with open('hrefs1.csv', encoding="utf-8") as csvfile:
            fd.close()
            import urllib.request
 
-
            # get the image source
            gg=driver.find_elements(By.CLASS_NAME,'gg-image')
            if(len(gg)>0):
@@ -86,7 +81,7 @@ with open('hrefs1.csv', encoding="utf-8") as csvfile:
                  from google.cloud import storage
 
                  client = storage.Client()
-                 bucket = client.get_bucket('callcenterneday')
+                 bucket = client.get_bucket('callcenterchatapril')
 
                  blob = bucket.blob(chat_id+"/"+chat_id + ".png")
                  blob.upload_from_filename(chat_id + ".png")
@@ -99,7 +94,7 @@ with open('hrefs1.csv', encoding="utf-8") as csvfile:
            from google.cloud import storage
 
            client = storage.Client()
-           bucket = client.get_bucket('callcenterneday')
+           bucket = client.get_bucket('callcenterchatapril')
 
            blob = bucket.blob(chat_id+"/"+chat_id + '.csv')
            blob.upload_from_filename(chat_id + '.csv')
